@@ -1,0 +1,12 @@
+const htmlContent = items[0].json.html; 
+
+items[0].binary = {
+  data: {
+    data: Buffer.from(htmlContent).toString('base64'),
+    mimeType: 'text/html',
+    fileName: 'raport.html',
+    fileExtension: 'html'
+  }
+};
+
+return items;
